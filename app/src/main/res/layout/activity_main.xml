@@ -15,7 +15,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.me.textfab.TextFab
+    <com.me.textfab.FloatingActionButton
         android:id="@+id/call_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:floating_background_color="?attr/colorPrimary"
         android:elevation="0dp"
 
-        app:floating_title="sadasd"
+        app:floating_title="Start Tour"
         app:floating_title_color="@android:color/white"
         />
 

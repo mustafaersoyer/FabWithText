@@ -14,7 +14,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
 
-public class TextFab extends FrameLayout {
+public class FloatingActionButton extends FrameLayout {
 
     private CardView container;
     private TextView titleView;
@@ -23,7 +23,7 @@ public class TextFab extends FrameLayout {
     private int titleColor;
     private int background;
 
-    public TextFab(Context context, AttributeSet attrs) {
+    public FloatingActionButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         inflateLayout(context);
         initAttributes(attrs);
@@ -111,7 +111,6 @@ public class TextFab extends FrameLayout {
         setTitleColor(titleColor);
         setBackgroundColor(background);
         container.setBackgroundResource(R.drawable.circle);
-
     }
 
 }
