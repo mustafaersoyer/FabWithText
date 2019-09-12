@@ -8,7 +8,6 @@
 
 ![alt text](https://github.com/mustafaersoyer/FabWithText/blob/master/Capture.PNG?raw=true)
 
-### 🏠 [Homepage](github.com/mustafaersoyer/FabWithText)
 
 ## Install
 Firstly, add Jitpack repository in your root build.gradle file (not your module build.gradle file):
