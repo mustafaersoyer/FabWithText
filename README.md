@@ -51,7 +51,7 @@ dependencies {
         android:layout_centerInParent="true" />
 ```
 
-![alt text](https://github.com/mustafaersoyer/FabWithText/blob/master/Screen.PNG?raw=true)
+![alt text](https://github.com/mustafaersoyer/FabWithText/blob/master/rsz1_scren.PNG?raw=true)
 
 
 ## Author
