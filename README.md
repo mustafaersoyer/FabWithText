@@ -26,9 +26,32 @@ Add dependency to your module's build.gradle file:
 
 ```sh
 dependencies {
-        implementation 'com.github.mustafaersoyer:fabwithtext:0.0.3'
+       implementation 'com.github.mustafaersoyer:fabwithtext:0.0.3'
 }
 ```
+
+## Usage
+
+```sh
+<com.me.textfab.FloatingActionButton
+        android:foreground="?android:attr/selectableItemBackground"
+        app:floating_background_color="@color/colorAccent"
+        app:floating_title="Start Tour"
+        app:floating_title_color="@android:color/white"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true" />
+```
+
 ![alt text](https://github.com/mustafaersoyer/FabWithText/blob/master/Screen.PNG?raw=true)
 
 
