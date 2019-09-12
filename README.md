@@ -6,7 +6,7 @@
 
 > Simple Floating Action Button with text
 
-![alt text](https://github.com/mustafaersoyer/Advanced-Android-WebView/blob/master/ENG.jpg?raw=true)
+![alt text](https://github.com/mustafaersoyer/FabWithText/blob/master/Capture.PNG?raw=true)
 
 ### 🏠 [Homepage](github.com/mustafaersoyer/FabWithText)
 
