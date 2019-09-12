@@ -29,6 +29,7 @@ dependencies {
         implementation 'com.github.mustafaersoyer:fabwithtext:0.0.3'
 }
 ```
+![alt text](https://github.com/mustafaersoyer/FabWithText/blob/master/Screen.PNG?raw=true)
 
 
 ## Author
