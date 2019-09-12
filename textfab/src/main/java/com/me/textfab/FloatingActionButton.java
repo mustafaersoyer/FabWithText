@@ -3,16 +3,27 @@ package com.me.textfab;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.StateListDrawable;
+import android.graphics.drawable.shapes.RoundRectShape;
+import android.graphics.drawable.shapes.Shape;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
+
+import java.nio.channels.Selector;
 
 public class FloatingActionButton extends FrameLayout {
 
@@ -23,6 +34,8 @@ public class FloatingActionButton extends FrameLayout {
     private int titleColor;
     private int background;
 
+    GradientDrawable gradientDrawable;
+    
     public FloatingActionButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         inflateLayout(context);
@@ -59,6 +72,7 @@ public class FloatingActionButton extends FrameLayout {
     public void setBackgroundColor(@ColorInt int color) {
         background = color;
         container.setCardBackgroundColor(color);
+
     }
 
     public @ColorInt int getBackgroundColor() {
@@ -88,6 +102,11 @@ public class FloatingActionButton extends FrameLayout {
 
         container = view.findViewById(R.id.layout_button_container);
         titleView = view.findViewById(R.id.layout_button_text);
+
+      /*  GradientDrawable gradientDrawable = (GradientDrawable) getResources().getDrawable(R.drawable.circle).getCurrent().mutate();
+        gradientDrawable.setColor(Color.RED);*/
+
+
     }
 
     private void initAttributes(AttributeSet attrs) {
@@ -111,6 +130,8 @@ public class FloatingActionButton extends FrameLayout {
         setTitleColor(titleColor);
         setBackgroundColor(background);
         container.setBackgroundResource(R.drawable.circle);
+        gradientDrawable = (GradientDrawable) container.getBackground().getCurrent().mutate();
+        gradientDrawable.setColor(background);
     }
 
 }
